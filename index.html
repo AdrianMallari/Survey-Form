@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">CITCS</h1>
+            <p id="description">
+                Thank you for taking the time to help us improve our platform
+            </p>
+        </header>
+            <form id="survey-form">
+               <div class="field">
+                   <label for="name" id="name-label">Name</label>
+                   <input type="text" id="name" class="box" placeholder="Enter name" required>
+               </div>
+               <div class="field">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" class="box" placeholder="Enter Email" required>
+                </div>
+                <div class="field">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" class="box" min="1" max="99" placeholder="Age">
+                </div>
+                <div class="field">
+                    <p>Current track</p>
+                    <select id="dropdown" name="course" class="box" required>
+                        <option disabled selected value>Select course</option>
+                        <option value="webtech">Web Technology</option>
+                        <option value="netsec">Network Security</option>
+                        <option value="erp">ERP</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <p>Year Level</p>
+                    <label class="label-text">
+                        <input type="radio" class="form" name="year-level">
+                        1st Year
+                    </label>
+                    <label class="label-text">
+                        <input type="radio" class="form" name="year-level">
+                        2nd Year
+                    </label>
+                    <label class="label-text">
+                        <input type="radio" class="form" name="year-level">
+                        3rd Year
+                    </label>
+                </div>
+                <div class="field">
+                    <p>Programming languages that you know: </p>
+                    <label>
+                        <input type="checkbox" class="form" value="java">
+                        Java
+                    </label>
+                    <label>
+                        <input type="checkbox" class="form" value="python">
+                        Python
+                    </label>
+                    <label>
+                        <input type="checkbox" class="form" value="c">
+                        C
+                    </label>
+                    <label>
+                        <input type="checkbox" class="form" value="c-plusplus">
+                        C++
+                    </label>
+                    <label>
+                        <input type="checkbox" class="form" value="c-sharp">
+                        C#
+                    </label>
+                </div>
+                <div class="field">
+                    <p>Comments or suggestions?</p>
+                    <textarea id="input-textarea" placeholder="Comments and suggestions..."></textarea>
+                </div>
+                <div class="submit-section">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

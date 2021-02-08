@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+}
+.box {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+.field {
+    margin: 20px;
+}
+label {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+h1, p {
+    margin-bottom: 10px;
+}
+.form {
+    margin-right: 5px;
+}
+#input-textarea {
+    max-height: 120px;
+    min-height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.submit-section {
+    text-align: center;
+}
+#submit {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
